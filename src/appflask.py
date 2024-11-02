@@ -7,7 +7,7 @@ app=Flask(__name__)
 model= load(open("../models/BosqueSabio.sav","rb"))
 
 class_dict={
-    "0": "Its more probably you're free of Diabetes, still consult a specialist"
+    "0": "Its more probably you're free of Diabetes, still consult a specialist",
     "1": "Its more probably you have Diabetes, still consult a specialist"
 }
 
@@ -35,4 +35,4 @@ def index():
         pred_class = "Error"
 
     
-    return render_template("index.html". prediction = pred_class)
+    return render_template("index.html", prediction = pred_class)
