@@ -9,7 +9,7 @@ class_dict={
     "1": "There is a mayor probability that you have diabetes"
 }
 
-st.tittle ("Think you have Diabetes?-Test it")
+st.title ("Think you have Diabetes?-Test it")
 
 val1= st.slider("Numer of pregnancies had:", min_value = 0, max_value = 10, step=1)
 val2= st.slider("Glucose in blood:", min_value = 10, max_value = 50, step=1)
