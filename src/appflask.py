@@ -2,6 +2,8 @@ from flask import Flask, request, render_template
 
 from pickle import load
 
+import os
+
 app=Flask(__name__)
 
 model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'BosqueSabio.sav')
