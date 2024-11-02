@@ -6,13 +6,8 @@ import os
 
 app=Flask(__name__)
 
-model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'BosqueSabio.sav')
+model = load(open("../models/BosqueSabio.sav", "rb"))
 
-# Check if the model file exists
-if not os.path.exists(model_path):
-    print("Model file not found at:", model_path)
-else:
-    model = load(open(model_path, "rb"))
 
 class_dict={
     "0": "Its more probably you're free of Diabetes, still consult a specialist",
