@@ -22,7 +22,7 @@ val8= st.slider("Age:", min_value = 0, max_value = 100, step=1)
 
 if st.button("Predict"):
 
-    prediction = str(model.predict([val1,val2,val3,val4,val5,val6,val7,val8])[0])
+    prediction = str(model.predict([[val1,val2,val3,val4,val5,val6,val7,val8]])[0])
 
     pred_class=class_dict[prediction]
 
