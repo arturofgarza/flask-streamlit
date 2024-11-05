@@ -1,7 +1,7 @@
 from pickle import load
 import streamlit as st
 
-model=load(open("..src/BosqueSabio.sav", "rb"))
+model=load(open("BosqueSabio.sav", "rb"))
 
 
 class_dict={
