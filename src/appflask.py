@@ -5,7 +5,7 @@ from pickle import load
 
 app=Flask(__name__)
 
-model=load(open("../models/BosqueSabio.sav", "rb"))
+model=load(open("models/BosqueSabio.sav", "rb"))
 
 
 class_dict={
